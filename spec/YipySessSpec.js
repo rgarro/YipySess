@@ -32,6 +32,7 @@ describe("YipySess",function(){
 	});
   //get specific key returns specific value
   it("get specific key returns specific value",function(){
+    var r = this.YipySess.set("testString","testVal");
     var res = this.YipySess.get("testString");
     expect(res).toBeString();
     expect(res).toBe("testVal");
@@ -51,8 +52,8 @@ describe("YipySess",function(){
     expect(this.YipySess.canHaveCookies).toBeBoolean();
   });
   //should have checkCanHaveCookies method
-  it("should Have setInitCookie method",function(){
+  /*it("should Have setInitCookie method",function(){
     expect(this.YipySess).toHaveMethod('checkCanHaveCookies');
-	});
+	});*/
 
 });
