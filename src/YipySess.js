@@ -4,7 +4,7 @@
  * @author Rolando / https://emptyart.github.io/
  */
 
-class YipySess {
+export default class YipySess {
   constructor() {
     this.keys = [];
     this.canHaveCookies = false;
